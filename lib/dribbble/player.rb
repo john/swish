@@ -1,7 +1,8 @@
 module Dribbble
   class Player < Base
     def self.find(id)
-      new(get("/players/#{id}"))
+      # new(get("/players/#{id}"))
+      new(get("/#{id}"))
     end
 
     # Fetches this player's shots.
